@@ -13,6 +13,9 @@ function frameIt(){
 function pressIt(){
   $("#typing").keydown(function(event){
     var x;
+    $( "#whichkey" ).on( "keydown", function( event ) {
+  $( "#log" ).html( event.type + ": " +  event.which );
+});
      
     if(x==71){
     alert('G');
