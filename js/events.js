@@ -19,7 +19,7 @@ function pressIt(){
   });
 }
 function submitIt(){
-  $( "#typing" ).submit(function() {
+  $( "#typing" ).click(function() {
   alert( "Your form is going to be submitted now." );
 });
 }
