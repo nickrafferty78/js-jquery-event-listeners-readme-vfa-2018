@@ -19,8 +19,9 @@ function pressIt(){
 }
 
 function submitIt(){
- $("#typing").submit(function() {
+ $("#typing").submit(function( event ) {
   alert( "Your form is going to be submitted now." );
+   event.preventDefault();
 });
 }
 
