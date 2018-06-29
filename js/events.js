@@ -12,12 +12,14 @@ function frameIt(){
 
 function pressIt(){
   $("#typing").keydown(function(event){
-    var x = event.which;
+    var x;
+    
     if(x==71){
     alert('G');
     }
   });
 }
+
 function submitIt(){
   $( "#typing" ).click(function() {
   alert( "Your form is going to be submitted now." );
