@@ -11,16 +11,11 @@ function frameIt(){
 }
 
 function pressIt(){
-  $("#typing")
- .keydown(function(event){   var x;
     $( "#typing" ).on( "keydown", function( event ) {
-  $( "#log" ).html( event.type + ": " +  event.which );
+  if (event.which == 71){
+    alert();
+  }
 });
-     
-    if(x==71){
-    alert('G');
-    }
-  });
 }
 
 function submitIt(){
